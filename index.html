@@ -25,7 +25,9 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">econdutor</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="img/logo.png" class="w-50" alt="">
+      </a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -95,147 +97,163 @@
 
   <!-- Portfolio Section -->
   <section class="page-section portfolio d-flex" id="portfolio">
-    <div class="container col-md-4">
-      <h3>Seu CFC precisa de um sistema de gestão</h3>
-      <p>O e-condutor ganhou o mercado das autoescolas.
-        Nosso sistema é a melhor opção para os CFC's que buscam uma ferramenta de gerenciamentto
-      que ofereça um ótimo custo-beneficio e seja prática de navegar.</p>
-      <p>Ter uma plataforma de gestão é fundamental para as autoescolas. Com a ajuda
-      de nossa ferramenta, é possível realizar diferentes serviços de forma mais fácil e rápida,
-      o que torna a rotina do CFC ainda mais eficiente</p>
-      <a class="btn btn-primary js-scroll-trigger" href="#comece">COMECE AGORA</a>
+    <div class="d-flex justify-content-center">
+      <div class="col-md-9 d-flex">
+        <div class="container col-md-4">
+          <h3>Seu CFC precisa de um sistema de gestão</h3>
+          <p>O e-condutor ganhou o mercado das autoescolas.
+            Nosso sistema é a melhor opção para os CFC's que buscam uma ferramenta de gerenciamentto
+          que ofereça um ótimo custo-beneficio e seja prática de navegar.</p>
+          <p>Ter uma plataforma de gestão é fundamental para as autoescolas. Com a ajuda
+          de nossa ferramenta, é possível realizar diferentes serviços de forma mais fácil e rápida,
+          o que torna a rotina do CFC ainda mais eficiente</p>
+          <a class="btn btn-primary js-scroll-trigger btn-comece" href="#comece">COMECE AGORA</a>
+        </div>
+        <div class="container col-md-4">
+          <img src="" alt="">
+        </div>
+        <div class="container col-md-4">
+          <p>O proprietário do CFC consegue configurar o e-condutor para que faça
+          um controle intensivo de todo o processo, desde o cadastro do aluno até a emissão
+          desua Carteira Nacional de Habilitação</p>
+        </div>
+      </div>
+
     </div>
-    <div class="container col-md-4">
-      <img src="" alt="">
-    </div>
-    <div class="container col-md-4">
-      <p>O proprietário do CFC consegue configurar o e-condutor para que faça
-      um controle intensivo de todo o processo, desde o cadastro do aluno até a emissão
-      desua Carteira Nacional de Habilitação</p>
-    </div>
+
   </section>
 
   <!-- About Section -->
-  <section class="page-section bg-primary text-white mb-0" id="recursos">
-    <div class="container">
-      <div class="col-md-8">
+  <section class="bg-white text-dark mb-0" id="recursos">
+    <div class="container d-flex justify-content-center">
+      <div class="col-md-6 shadow-around mb-5">
         <h3>Os principais recursos</h3>
-        <p>O e-condutor foi desenvolvido especialmente para o segmento das autoescolas,
+        <p class="font-weight-bold font-italic">O e-condutor foi desenvolvido especialmente para o segmento das autoescolas,
         por isso, suas funcionalidades são específicas para esse mercado, atendendo toas as suas necessidades.
         Conheça algumas das principais funções da nossa ferramenta:</p>
-        <ul>
+        <ul class="principais-recursos">
           <li>Atendimento</li>
           <li>Agenda Online</li>
           <li>Financeiro</li>
           <li>Gestão Total</li>
         </ul>
-        <a class="btn btn-primary js-scroll-trigger btn-comece" href="#comece">COMECE AGORA</a>
+        <div class="col-md-12 text-center py-0">
+          <a class="btn btn-primary js-scroll-trigger btn-comece" href="#comece">COMECE AGORA</a>
+        </div>
       </div>
     </div>
-    <div class="recurso-items d-flex">
-      <div class="recurso-item-select">
-        <h2 class="font-italic">Titulo Recurso</h2>
-        <img src="" alt="imagem">
-      </div>
-      <div class="lista-recursos">
-        <ul>
-          <li><i class="far fa-calendar-alt"></i> Agenda</li>
-          <li><i class="fas fa-chart-line"></i> Fases</li>
-          <li><i class="fas fa-dollar-sign"></i> Financeiro</li>
-          <li><i class="fas fa-info"></i> Instruções da Autoescola</li>
-        </ul>
+    <div class="col-md-12 d-flex justify-content-center">
+      <div class="col-md-10">
+        <div class="recurso-items d-flex">
+          <div class="recurso-item-select">
+            <h2 class="font-italic">Titulo Recurso</h2>
+            <img src="" alt="imagem">
+          </div>
+          <div class="lista-recursos">
+            <ul>
+              <li><i class="far fa-calendar-alt"></i> Agenda</li>
+              <li><i class="fas fa-chart-line"></i> Fases</li>
+              <li><i class="fas fa-dollar-sign"></i> Financeiro</li>
+              <li><i class="fas fa-info"></i> Instruções da Autoescola</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="recurso-item d-flex">
+    <div class="recurso-item d-flex bg-gray text-dark">
       <div class="text-right w-50 px-4">
         <h4>Tudo que seu aluno precisa</h4>
         <dl>
           <dt>Dísponivel para</dt>
-          <dd><i class="fas fa-check-circle"></i>Android</dd>
-          <dd><i class="fas fa-check-circle"></i> iPhone</dd>
+          <dd><i class="text-primary fas fa-check-circle"></i> Android</dd>
+          <dd><i class="text-primary fas fa-check-circle"></i> iPhone</dd>
         </dl>
-        <p class="col-md-6 float-right">Um aplicativo intuitivo e completo, que possibilita ao aluno ter acesso à todas informaçõe
+        <p class="col-md-6 px-0 float-right">Um aplicativo intuitivo e completo, que possibilita ao aluno ter acesso à todas informaçõe
         respectivas ao processo, fazendo com que seus atendentes ganhem tempo para focar nas atividades do seu CFC</p>
       </div>
       <div>
         <img src="" alt="imagem">
     </div>
   </section>
+  <div class="divider-custom bg-primary-gradient py-5">
+  </div>
   <section class="page-section" id="atendimento">
-    <div class="row">
-      <div class="col-md-8 px-5">
+    <div class="row bg-gray py-5">
+      <div class="col-md-5 px-5">
         <h2 class="font-italic px-5">Suporte Técnico Dedicado</h2>
-        <p class="font-weight-bold px-5">Contamos com uma equipe de Suporte dedicada que está pronta para atender aos seus chamados
+        <p class="font-weight-bold px-5 mb-0">Contamos com uma equipe de Suporte dedicada que está pronta para atender aos seus chamados
         ou ajudar no que for necessário em relação ao sistema</p>
         <p class=" px-5">Além é claro de treinar toda a equipe de seu CFC desde o primeiro passo, quantas vezes for necessário, sem custo adicional</p>
         <a class="btn btn-primary js-scroll-trigger mt-5 btn-comece" href="#comece">COMECE AGORA</a>
       </div>
       <div class="bg-primary-gradient text-white rounded p-2 col-md-2 text-center">
         <div class="row">
-          <div class="border border-top-0 border-left-0 col-md-5 ml-3">
+          <div class="border-dotted border-top-0 border-left-0 col-md-5 ml-3 pt-2">
             <i class="far fa-folder-open fa-3x"></i>
-            Importação de dados
+            <span>Importação de dados</span>
           </div>
-          <div class="border border-top-0 border-right-0 col-md-5 mr-2">
+          <div class="border-dotted border-top-0 border-right-0 col-md-5 mr-2 pt-2">
             <i class="fas fa-desktop fa-3x"></i>
-            Treinamento remoto
+            <span>Treinamento remoto</span>
           </div>
         </div>
         <div class="row">
-          <div class="border border-top-0 border-left-0 col-md-5 ml-3">
+          <div class="border-dotted border-top-0 border-left-0 col-md-5 ml-3 pt-2">
             <i class="fas fa-headset fa-3x"></i></i>
-            Suporte via Telefone
+            <span>Suporte via Telefone</span>
           </div>
-          <div class="border border-top-0 border-right-0 col-md-5 mr-2">
-            <i class="fas fa-comment-dots fa-3x"></i>
-            Suporte via Chat no Sistema
+          <div class="border-dotted border-top-0 border-right-0 col-md-5 mr-2 pt-2 px-1">
+            <i class="fas fa-comment-dots fa-3x"></i><br>
+            <span class="w-100">Suporte via Chat no Sistema</span>
           </div>
         </div>
         <div class="row">
-          <div class="border border-top-0 border-left-0 border-bottom-0 col-md-5 ml-3">
+          <div class="border-dotted border-top-0 border-left-0 border-bottom-0 col-md-5 ml-3 pt-2">
             <i class="fa fa-shield-alt fa-3x"></i>
-            Manutenção Preventiva
+            <span class="w-100">Manutenção Preventiva</span>
           </div>
-          <div class="border border-top-0 border-right-0 border-bottom-0 col-md-5 mr-2">
+          <div class="border-dotted border-top-0 border-right-0 border-bottom-0 col-md-5 mr-2 pt-2">
             <i class="fas fa-cogs fa-3x"></i>
-            Configuração Remota
+          <span>Configuração Remota</span>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="page-section">
-    <h2 class="font-italic">NÍVEIS DE ACESSO</h2>
-    <div class="col-md-12 text-center">
-      <div class="w-75 d-flex">
-        <div class="col-md-4">
-          <h3 class="font-weight-bold">PAINEL ADMINISTRATIVO</h3>
+  <section class="page-section bg-gray">
+    <div class="col-md-12 d-flex justify-content-center">
+      <h2 class="col-md-8 font-italic">NÍVEIS DE ACESSO</h2>
+    </div>
+    <div class="col-md-12 d-flex justify-content-center">
+      <div class="d-flex col-md-8 text-center bg-white mb-3 shadow-around">
+        <div class="col-md-4 py-4">
+          <h3 class="font-weight-bold ls-3">PAINEL ADMINISTRATIVO</h3>
           <span class="font-weight-bold">(Acesso Exclusivo do Gestor da Autoescola)</span><br>
           <i class="fas fa-user-tie fa-4x"></i>
           <h4>Recursos</h4>
-          <ul>
+          <ul class="lsp-inside">
             <li>Configuração de formas de pagamento</li>
             <li>Adicionar carros e funcionários</li>
             <li>Acesso exclusivo aos indicadoresde qualquer dispositivo (tablet, celular ou computador)</li>
           </ul>
         </div>
-        <div class="col-md-4 bg-primary-gradient text-white">
-          <h3 class="font-weight-bold">PAINEL OPERACIONAL</h3>
+        <div class="col-md-4 py-4 bg-primary-gradient text-white">
+          <h3 class="font-weight-bold ls-3">PAINEL OPERACIONAL</h3>
           <span class="font-weight-bold">(Acesso do atendente e do instrutor)</span><br>
           <i class="fas fa-user fa-4x"></i>
           <h4>Recursos</h4>
-          <ul>
+          <ul class="lsp-inside">
             <li>Configuração de formas de pagamento</li>
             <li>Adicionar carros e funcionários</li>
             <li>Acesso exclusivo aos indicadoresde qualquer dispositivo (tablet, celular ou computador)</li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <h3 class="font-weight-bold">PAINEL DO ALUNO</h3>
+        <div class="col-md-4 py-4">
+          <h3 class="font-weight-bold ls-3">PAINEL DO ALUNO</h3>
           <span class="font-weight-bold">(Acesso do aluno)</span><br>
           <i class="fas fa-users fa-4x"></i>
           <h4>Recursos</h4>
-          <ul>
+          <ul class="lsp-inside">
             <li>Acompanhamento da agenda</li>
             <li>Impressão de recibos e contrato</li>
             <li>Acompanhamento das fases do processo</li>
@@ -253,24 +271,43 @@
   </section>
   <!-- Contact Section -->
   <section class="page-section" id="depoimentos">
-    <div class="container">
-      <h3>Quem utiliza recomenda</h3>
-      <p>Com centenas de clientes ao redor do país, extremamente satisfeitos e que recomendam todo o nosso serviço, temos
-      orgulho do trabalho que desempenhamos e nossa maior satisfação é trabalhar para oferecer um Sistema cada
-      dia melhor aos nossos clientes</p>
+    <div class="container text-center col-md-12 d-flex justify-content-center">
+        <div class="col-md-7">
+          <h3>Quem utiliza recomenda</h3>
+          <p>Com centenas de clientes ao redor do país, extremamente satisfeitos e que recomendam todo o nosso serviço, temos
+          orgulho do trabalho que desempenhamos e nossa maior satisfação é trabalhar para oferecer um Sistema cada
+          dia melhor aos nossos clientes</p>
+        </div>
     </div>
-    <div class="">
-      <h2>Transforme a Gestão da sua Autoescola de maneira permanente</h2>
-      <span>Começe agora como melhor sistema para autoescolas</span>
-      <div class="col-md-12 text-center">
-        <a class="btn btn-primary js-scroll-trigger btn-comece" href="#comece">COMECE AGORA</a>
+    <div class="container text-center col-md-12 d-flex justify-content-center">
+      <div class="col-md-9 bg-gray py-5">
+
       </div>
+    </div>
+    <div class="container text-center col-md-12 d-flex justify-content-center">
+      <div class="col-md-9">
+        <h2>Transforme a Gestão da sua Autoescola de maneira permanente</h2>
+        <span class="span-text">Começe agora como melhor sistema para autoescolas</span>
+        <div class="col-md-12 text-center mt-4">
+          <a class="btn btn-primary js-scroll-trigger btn-comece" href="#comece">COMECE AGORA</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- Footer -->
-  <!-- <footer class="footer text-center">
-  </footer> -->
+  <footer class="bg-primary-gradient py-5 d-flex justify-content-center">
+    <div class="">
+      <div class="row">
+        <img src="img/logo.png" alt="">
+      </div>
+      <div class="row text-white">
+        <span class="footer-text">O MELHOR SISTEMA DE GESTÃO PARA AUTO ESCOLAS</span>
+      </div>
+
+    </div>
+  </footer>
 
 
   <!-- Bootstrap core JavaScript -->
