@@ -10909,3 +10909,20 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+
+#img_developers{
+  background-image: url('../img/developers.jpg');
+  background-size: cover; 
+}
+
+#suporte_grade{
+  left: -30%;
+}
+
+#txt_suporte{
+  padding: 0 20%;
+}
+
+#txt_suporte p{
+  font-size: 15px;
+}
