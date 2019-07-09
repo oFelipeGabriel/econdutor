@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <title>e-Condutor | Gestão para Autoescolas</title>
-
+  <link rel="stylesheet" href="vendor/swiper/swiper.min.css"/>
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -308,9 +308,9 @@
       </div>
     </div>
     <div class="container text-center col-md-12 d-flex justify-content-center">
-      <div class="col-md-9 bg-gray py-5">
-
-      </div>
+      <swiper :options="swiperOption" class="col-md-9">
+          <swiper-slide v-for="c in clientes"><img class="imagem-cliente" :src="c.imagem"></swiper-slide>
+        </swiper>
     </div>
     <div class="container text-center col-md-12 mt-5 d-flex justify-content-center">
       <div class="col-md-9">
@@ -322,6 +322,7 @@
       </div>
 
     </div>
+
   </section>
 
   <!-- Footer -->
@@ -338,19 +339,62 @@
   </footer>
 
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/econdutor.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/econdutor.js"></script>
+
+<!-- Vue js -->
+
+<script type="text/javascript" src="vendor/swiper/swiper.min.js"></script>
+<script src="vendor/vue/vue.js"></script>
+<script src="vendor/vue/axios.min.js"></script>
+<script type="text/javascript" src="vendor/swiper/vue-awesome-swiper.js"></script>
+<script type="text/javascript">
+  Vue.use(window.VueAwesomeSwiper)
+</script>
+<script>
+var app = new Vue({
+  el: "#depoimentos",
+  data:{
+    clientes:[],
+    swiperOption: {
+          slidesPerView: 4,
+          spaceBetween: 5,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
+        }
+  },
+  methods:{
+    get(){
+      var c = this;
+      axios.get('clientes.json').then(function(res){
+        c.clientes = res.data.clientes;
+        console.log(c.clientes);
+      })
+
+    }
+  },
+  mounted(){
+    this.get();
+  }
+})
+</script>
 
 </body>
 

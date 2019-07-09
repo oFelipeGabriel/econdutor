@@ -10291,7 +10291,9 @@ form .row:first-child .floating-label-form-group {
   letter-spacing: 2px;
   font-weight: 600;
 }
-
+.imagem-cliente{
+  height: 50px;
+}
 #atendimento .bg-primary-gradient {
   height: 32vh;
   min-height: 220px;

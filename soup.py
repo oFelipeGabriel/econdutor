@@ -23,13 +23,19 @@ with open('depoimentos.json', 'w') as outfile:
     json.dump(depoimentos, outfile, ensure_ascii=False, indent=4)
 
 #cria pasta para salvar imagens das autoescolas
-if not os.path.exists('econdutor'):
-    os.mkdir('econdutor')
-
+if not os.path.exists('econdutor-parceiros'):
+    os.mkdir('econdutor-parceiros')
+clientes = {}
+clientes['clientes'] = []
 #percorre imagens para serem salvas
 for div in soup.find_all('div', class_='logo-parceiro'):
     file = div['style'].replace(' background-image: url(', '').replace(');', '')
     print(file.split('/')[-1])
+    clientes['clientes'].append({
+        'imagem': 'econdutor-parceiros/'+file.split('/')[-1]
+        })
     #salva imagem
-    urllib.request.urlretrieve(file, "econdutor/"+file.split('/')[-1])
+    urllib.request.urlretrieve(file, "econdutor-parceiros/"+file.split('/')[-1])
+with open('clientes.json', 'w') as outfile:  
+    json.dump(clientes, outfile, ensure_ascii=False, indent=4)
 
