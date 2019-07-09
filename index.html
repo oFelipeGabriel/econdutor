@@ -307,9 +307,16 @@
           dia melhor aos nossos clientes</p>
       </div>
     </div>
-    <div class="container text-center col-md-12 d-flex justify-content-center">
+    <div class="container text-center col-md-12 d-flex justify-content-center position-relative">
+      <div class="depoimentos-logos-bg position-absolute px-0">
+        <hr class="depoimentos-hr">
+      </div>
       <swiper :options="swiperOption" class="col-md-9">
-          <swiper-slide v-for="c in clientes"><img class="imagem-cliente" :src="c.imagem"></swiper-slide>
+          <swiper-slide v-for="c in clientes">
+            <div class="col-md-9 div-imagem position-relative d-flex justify-content-center px-0">
+              <img class="imagem-cliente align-middle" :src="c.imagem">
+            </div>
+            </swiper-slide>
         </swiper>
     </div>
     <div class="container text-center col-md-12 mt-5 d-flex justify-content-center">
@@ -370,6 +377,7 @@ var app = new Vue({
     swiperOption: {
           slidesPerView: 4,
           spaceBetween: 5,
+          loop: true,
           pagination: {
             el: '.swiper-pagination',
             clickable: true

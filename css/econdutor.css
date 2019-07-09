@@ -10291,8 +10291,28 @@ form .row:first-child .floating-label-form-group {
   letter-spacing: 2px;
   font-weight: 600;
 }
+.div-imagem{
+  height: 122px;
+  background-color: white;
+  width: 71%;
+}
 .imagem-cliente{
-  height: 50px;
+  max-width: 85%;
+  top:10px;
+  left: 0;
+  bottom:0;
+  margin:auto;
+}
+.depoimentos-hr{
+  border: 1px solid #54AF4B;
+  width: 30%;
+  margin-top: 14%;
+}
+.depoimentos-logos-bg {
+  background-color: #dedede;
+  top: 25px;
+  height: 125%;
+  width: 73% !important;
 }
 #atendimento .bg-primary-gradient {
   height: 32vh;
