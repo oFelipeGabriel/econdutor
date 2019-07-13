@@ -9945,7 +9945,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .divider-custom {
-  margin: 1.25rem 0 1.5rem;
+  margin: 0 0 3.5rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10336,6 +10336,10 @@ form .row:first-child .floating-label-form-group {
   top: 25px;
   height: 125%;
   width: 73% !important;
+}
+
+#atendimento{
+  margin: 7rem 0;
 }
 
 #atendimento .bg-primary-gradient {
